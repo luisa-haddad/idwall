@@ -1,0 +1,35 @@
+.wrapper-galeria
+    .titles
+        display: flex
+        justify-content: space-around
+        margin-top: 2rem
+        a
+            border-radius: 6px
+            font-weight: 500
+            font-size: 14px
+            text-decoration: none
+            color: #000000
+            min-width: 4rem
+            text-align: center
+            padding-top: 1rem
+            padding-bottom: 1rem
+            border-bottom: solid 1px #50f
+            -webkit-transition: all .3s
+            -o-transition: all .3s
+            @media screen and (min-width: 425px)
+                min-width: 5rem
+            @media screen and (min-width: 768px)
+                min-width: 7rem
+                font-size: 1.2rem
+            &:hover
+                background-color: #50f
+                color: white
+                -webkit-transition: all .3s
+                -o-transition: all .3s
+                transition: all .3s
+            &.active
+                background-color: #50f
+                color: white
+                -webkit-transition: all .3s
+                -o-transition: all .3s
+                transition: all .3s

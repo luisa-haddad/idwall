@@ -1,0 +1,89 @@
+.content 
+    padding-top: 4rem
+    .wrapper-input
+        display: flex
+        align-items: center
+        justify-content: center
+        .animated-input
+            position: relative
+            margin: auto
+            width: 90%
+            .label
+                position: absolute
+                top: 16px
+                left: 0
+                font-size: 16px
+                color: #9098A9
+                font-weight: 500
+                transform-origin: 0 0
+                transition: all .2s ease
+            .border
+                position: absolute
+                bottom: 0
+                left: 0
+                height: 2px
+                width: 100%
+                background: #50f
+                transform: scaleX(0)
+                transform-origin: 0 0
+                transition: all .15s ease
+            input
+                -webkit-appearance: none
+                width: 100%
+                border: 0
+                font-family: inherit
+                padding: 12px 0
+                height: 48px
+                font-size: 16px
+                font-weight: 500
+                border-bottom: 2px solid #000000
+                background: none
+                border-radius: 0
+                color: #223254
+                transition: all .15s ease
+                &:hover
+                    background: rgba(#223254,.03)
+                &:not(:placeholder-shown)       
+                    + span
+                        color: #5A667F
+                        transform: translateY(-26px) scale(.75)
+                &:focus
+                    background: none
+                    outline: none
+                    + span
+                        color: #50f
+                        transform: translateY(-26px) scale(.75)
+                        + .border
+                            transform: scaleX(1)
+    a
+        width: 150px
+        height: 40px
+        color: #50f
+        background: #fff
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        border-radius: 6px
+        font-weight: 500
+        font-size: 14px
+        -webkit-transition: all .3s
+        -o-transition: all .3s
+        transition: all .3s
+        border: solid 1px #50f
+        margin: 0 auto
+        margin-top: 2rem
+        text-decoration: none
+        &:hover
+            background: #50f
+            color: #fff
+            -webkit-transition: all .3s
+            -o-transition: all .3s
+            transition: all .3s
+
+
